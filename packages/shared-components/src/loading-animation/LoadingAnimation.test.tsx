@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 import React from 'react'
-import {screen} from '@testing-library/react'
+import {screen, render} from '@testing-library/react'
 
-import {LoadingAnimation} from './LoadingAnimation'
-import RenderWithReactIntl from '../../__tests__/utils'
+import LoadingAnimation from './LoadingAnimation'
+
 
 describe('Loading Page tests', () => {
   it('Test LoadingPage renders', () => {
-    RenderWithReactIntl(
+    render(
     <LoadingAnimation />
     )
     expect(screen.getAllByTestId('svgContainer')).toBeTruthy()

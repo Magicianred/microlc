@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // leave other options without changes
+    "declaration": true, // generates .d.ts files inside the output directory
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "strict": true,
+    "noEmit": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true
+  },
+  "include":["src/**/**/*",],
+  "exclude": [
+    "node_modules"
+  ]
+}

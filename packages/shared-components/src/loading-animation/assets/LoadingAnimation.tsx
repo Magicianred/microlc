@@ -1,4 +1,6 @@
-<svg
+const LoadingSvg = () => {
+  return (
+    <svg
   id="hexagon_container"
   viewBox="0 0 300 300"
   shape-rendering="geometricPrecision"
@@ -37,3 +39,6 @@
       />
   </g>
 </svg>
+  )
+}
+export default LoadingSvg

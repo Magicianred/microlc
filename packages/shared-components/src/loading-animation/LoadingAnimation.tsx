@@ -13,15 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 import React from 'react'
 
-import {ErrorPageContainer} from '../../containers/error-page/ErrorPageContainer'
-import ErrorPage401Svg from '@mia-platform/shared-components'
+import LoadingSvg from './assets/LoadingAnimation'
+import './LoadingAnimation.css'
 
-export const ErrorPage401: React.FC = () => {
+const LoadingAnimation: React.FC = () => {
   return (
-    <ErrorPageContainer descriptionKeys={['401_description', '401_description_1']} titleKey='401_title'>
-      <ErrorPage401Svg/>
-    </ErrorPageContainer>
+    <div className='loadingAnimation_svg_container' data-testid="svgContainer">
+      <LoadingSvg />
+    </div>
   )
 }
+
+export default LoadingAnimation

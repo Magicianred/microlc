@@ -13,16 +13,4 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-import React from 'react'
-
-import {ReactComponent as SvgAnimation} from './assets/LoadingAnimation.svg'
-import './LoadingAnimation.less'
-
-export const LoadingAnimation: React.FC = () => {
-  return (
-    <div className='loadingAnimation_svg_container' data-testid="svgContainer">
-      <SvgAnimation />
-    </div>
-  )
-}
+/// <reference types="react-scripts" />
